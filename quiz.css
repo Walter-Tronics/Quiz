@@ -1,0 +1,72 @@
+@font-face { font-family: Sofia; src: url('/Sofia.ttf'); } 
+body{
+  background: brown;
+  color: white;
+}
+#quiz-box{
+  max-width: 400px;
+  overflow: hidden;
+  width: 95%;
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: white;
+  color: black;
+}
+#quiz-box h4{
+  text-align: center;
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
+}
+b{
+  color: #028639;
+}
+.quest{
+  font-weight: bold;
+  display: none;
+}
+.opt{
+  border: 1px solid;
+  margin: 5px 0;
+  padding: 5px;
+  cursor: pointer;
+}
+.pop3{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: none;
+}
+.subpop3{
+  position: relative;
+  top: 10%;
+  background: white;
+  text-align: center;
+  font-weight: bold;
+}
+.pop,.pop2,.pop{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: rgba(0, 0, 0, 0.281);
+}
+.subpop,.subpop2{
+  position: relative;
+  top: 30%;
+  background: white;
+  text-align: center;
+}
+.pop h4,.pop2 h4{
+  cursor: pointer;
+}
+.subpop3 h2{
+  font-family: Sofia;
+}
