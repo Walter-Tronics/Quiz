@@ -7,35 +7,40 @@
   <title>Simple Quiz</title>
   <body>
     <section id="quiz-box">
+      <!--Timer function-->
+      <div id="timer">
+        <div class="timerVal w3-green"></div>
+      </div>
+      <!--Timer function ends-->
 
       <div id="question">
         <!--question 1 starts-->
         <div class="quest">
           <h3>Q1. What does <b>HTML</b> stands for?</h3>
           <h6>Options:</h6>
-          <div class="opt w3-green" onclick="mark(1)">
+          <div class="opt w3-green">
             A.
             <input type="radio" name="option" id="option1">
             <label for="option1">Hypertext Makeup Lane</label>
           </div>
-          <div class="opt w3-green" onclick="mark(2)">
+          <div class="opt w3-green">
             B.
             <input type="radio" name="option" id="option2">
             <label for="option2">Hypertext Markup Language</label>
           </div>
-          <div class="opt w3-green" onclick="mark(3)">
+          <div class="opt w3-green">
             C.
             <input type="radio" name="option" id="option3">
             <label for="option3">Huntingtext Markup Language</label>
           </div>
-          <div class="opt w3-green" onclick="mark(4)">
+          <div class="opt w3-green">
             D.
             <input type="radio" name="option" id="option4">
             <label for="option4">Hypertext Makeup Language</label></input>
           </div>
         
           <!--The check button-->
-          <h4 class="w3-blue" style="cursor: pointer;" onclick="check1()">Check<h4>
+          <h4 class="w3-blue" style="cursor: pointer;" id="check1">Check<h4>
           <!--The check button ends-->
         </div>
         <!--question 1 ends-->
@@ -44,29 +49,29 @@
         <div class="quest">
           <h3>Q2. What does <b>CSS</b> stands for?</h3>
           <h6>Options:</h6>
-          <div class="opt w3-green" onclick="mark2(1)">
+          <div class="opt w3-green">
             A.
             <input type="radio" name="option2" id="option(2)1">
             <label for="option(2)1">Cascading Stylestate</label>
           </div>
-          <div class="opt w3-green" onclick="mark2(2)">
+          <div class="opt w3-green">
             B.
             <input type="radio" name="option2" id="option(2)2">
             <label for="option(2)2">Cascading Statestyle</label>
           </div>
-          <div class="opt w3-green" onclick="mark2(3)">
+          <div class="opt w3-green">
             C.
             <input type="radio" name="option2" id="option(2)3">
             <label for="option(2)3">Containing Stylesheet</label>
           </div>
-          <div class="opt w3-green" onclick="mark2(4)">
+          <div class="opt w3-green">
             D.
             <input type="radio" name="option2" id="option(2)4">
             <label for="option(2)4">Cascading Stylesheet</label></input>
           </div>
 
           <!--The check button-->
-          <h4 class="w3-blue" style="cursor: pointer;" onclick="check2()">Check<h4>
+          <h4 class="w3-blue" style="cursor: pointer;" id="check2">Check<h4>
           <!--The check button ends-->
         </div>
         <!--question 2 ends-->
@@ -75,29 +80,29 @@
         <div class="quest">
           <h3>Q3. What does <b>PHP</b> stands for?</h3>
           <h6>Options:</h6>
-          <div class="opt w3-green" onclick="mark3(1)">
+          <div class="opt w3-green">
             A.
             <input type="radio" name="option3" id="option(3)1">
             <label for="option(3)1">Hypertext Preprocessor</label>
           </div>
-          <div class="opt w3-green" onclick="mark3(2)">
+          <div class="opt w3-green">
             B.
             <input type="radio" name="option3" id="option(3)2">
             <label for="option(3)2">Huntingtext Preprocessor</label>
           </div>
-          <div class="opt w3-green" onclick="mark3(3)">
+          <div class="opt w3-green">
             C.
             <input type="radio" name="option3" id="option(3)3">
             <label for="option(3)3">Preprocessor Part</label>
           </div>
-          <div class="opt w3-green" onclick="mark3(4)">
+          <div class="opt w3-green">
             D.
             <input type="radio" name="option3" id="option(3)4">
             <label for="option(3)4">Programhyper Preprocessor</label></input>
           </div>
 
           <!--The check button-->
-          <h4 class="w3-blue" style="cursor: pointer;" onclick="check3()">Check<h4>
+          <h4 class="w3-blue" style="cursor: pointer;" id="check3">Check<h4>
           <!--The check button ends-->
         </div>
         <!--question 3 ends-->
@@ -106,29 +111,29 @@
         <div class="quest">
           <h3>Q4. What does <b>API</b> stands for?</h3>
           <h6>Options:</h6>
-          <div class="opt w3-green" onclick="mark4(1)">
+          <div class="opt w3-green">
             A.
             <input type="radio" name="option4" id="option(4)1">
             <label for="option(4)1">Automatic Programme Interface</label>
           </div>
-          <div class="opt w3-green" onclick="mark4(2)">
+          <div class="opt w3-green">
             B.
             <input type="radio" name="option4" id="option(4)2">
             <label for="option(4)2">Applicant Programming Interface</label>
           </div>
-          <div class="opt w3-green" onclick="mark4(3)">
+          <div class="opt w3-green">
             C.
             <input type="radio" name="option4" id="option(4)3">
             <label for="option(4)3">Application Programming Interface</label>
           </div>
-          <div class="opt w3-green" onclick="mark4(4)">
+          <div class="opt w3-green">
             D.
             <input type="radio" name="option4" id="option(4)4">
             <label for="option(4)4">Application Programming Interfere</label></input>
           </div>
 
           <!--The check button-->
-          <h4 class="w3-blue" style="cursor: pointer;" onclick="check4()">Check<h4>
+          <h4 class="w3-blue" style="cursor: pointer;" id="check4">Check<h4>
           <!--The check button ends-->
         </div>
         <!--question 4 ends-->
