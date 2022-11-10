@@ -1,12 +1,15 @@
 @font-face { font-family: Sofia; src: url('/Sofia.ttf'); } 
+
+*,*::before,*::after{
+  box-sizing: border-box;
+}
 body{
   background: brown;
   color: white;
 }
 #quiz-box{
-  max-width: 400px;
   overflow: hidden;
-  width: 95%;
+  width: min(95%,400px);
   padding: 15px;
   position: absolute;
   top: 50%;
@@ -16,10 +19,22 @@ body{
   color: black;
   border-radius: 10px;
 }
+#timer{
+  height: .5em;
+  border-radius: 10px;
+}
+#timer>div{
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+}
 #quiz-box h4{
   text-align: center;
   font-weight: bolder;
   font-family: 'Courier New', Courier, monospace;
+}
+.quest h3{
+  font-size: 1.55rem;
 }
 b{
   color: #028639;
@@ -29,10 +44,14 @@ b{
   display: none;
 }
 .opt{
-  border: 1px solid;
+  display: flex;
+  align-items: center;
   margin: 5px 0;
   padding: 5px;
   cursor: pointer;
+}
+.opt input,.opt label{
+  margin-left: .3em;
 }
 .pop3{
   position: absolute;
@@ -40,8 +59,8 @@ b{
   left: 0%;
   width: 100%;
   height: 100%;
-  background: white;
   display: none;
+  background: white;
 }
 .subpop3{
   position: relative;
