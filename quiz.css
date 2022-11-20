@@ -70,7 +70,7 @@ b {
 }
 .subpop4 {
   position: relative;
-  top: 10%;
+  padding: 2em;
   background: white;
   text-align: center;
   font-weight: bold;
@@ -101,4 +101,5 @@ b {
   cursor: pointer;
   position: absolute;
   left: 0;
+  bottom: 0;
 }
