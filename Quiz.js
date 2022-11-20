@@ -224,3 +224,9 @@ function change(){
     result_4.classList.add("w3-blue")}
   */
 }
+
+//Restarting the game
+let restart = document.querySelector('.restart');
+restart.addEventListener('click', ()=>{
+  location.reload();
+});
