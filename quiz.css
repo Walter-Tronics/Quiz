@@ -96,3 +96,9 @@ b {
 .subpop4 h2 {
   font-family: Sofia;
 }
+.restart{
+  background: brown;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
