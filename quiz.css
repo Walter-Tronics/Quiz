@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
 @font-face {
   font-family: Sofia;
   src: url("/Sofia.ttf");
@@ -11,9 +13,9 @@
 body {
   background: brown;
   color: white;
+  font-family: sans-serif;
 }
 #quiz-box {
-  overflow: hidden;
   width: min(95%, 400px);
   padding: 15px;
   position: absolute;
@@ -67,13 +69,17 @@ b {
   height: 100%;
   display: none;
   background: white;
+  border-radius: 10px;
 }
 .subpop4 {
   position: relative;
   padding: 2em;
   background: white;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
   font-weight: bold;
+  border-radius: 10px;
 }
 .pop,.pop2,.pop3 {
   position: absolute;
@@ -102,4 +108,5 @@ b {
   position: absolute;
   left: 0;
   bottom: 0;
+  border-bottom-left-radius: 10px;
 }
