@@ -95,7 +95,7 @@ function countdown() {
     //When timer ends, check if the right option for the third question has been choosen
     }else if(prog_value == 0 && answer3.checked && myindex == 3){pop.style.display = 'block'};
 
-    //When timer ends, check if the right option for the fourth question hasn't been chooen
+    //When timer ends, check if the right option for the fourth question hasn't been chosen
     if (prog_value == 0 && !answer4.checked && myindex == 4) {
       //Set the mark to false
       fourthMark = false;
