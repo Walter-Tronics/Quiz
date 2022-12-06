@@ -47,6 +47,7 @@ function next() {
   countdown();
 }
 
+
 //Animating the timer for countdown
 var prog_value = 100,
 interval;
