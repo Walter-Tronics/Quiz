@@ -23,7 +23,7 @@ body {
   background: #282c34;
   padding: .2em .2em .2em 3em;
   border-radius: 5px;
-  font-family: cursive;
+  font-family: cursive, 'sans-serif';
   transition: 1s;
   cursor: pointer;
 }
@@ -131,4 +131,5 @@ b {
   height: 30px;
   border-radius: 5px 5px 0 0;
   bottom: -8px;
+  color: white;
 }
