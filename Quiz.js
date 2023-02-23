@@ -231,3 +231,41 @@ let restart = document.querySelector('.restart');
 restart.addEventListener('click', ()=>{
   location.reload();
 });
+
+//Theming
+const theme = document.querySelector('.theme'),
+quiz_box = document.querySelector('#quiz-box'),
+resBtn = document.querySelector('.restart'),
+res_box = document.querySelector('.subpop4');
+
+theme.addEventListener('click', ()=>{
+  if (theme.innerText == 'Dark') {
+    theme.style.left = '-12%';
+
+    setTimeout( ()=>{
+      theme.innerText = 'Light';
+      theme.classList.add('light');
+      theme.style.left = '-4%';
+      document.querySelector('body').classList.add('darkbody');
+      quiz_box.style.background = 'rgba(0, 0, 0, 0.281)';
+      quiz_box.style.color = 'white';
+      res_box.style.background = 'rgba(0, 0, 0, 0.281)';
+      resBtn.style.background = '#282c34';
+    },1000);
+    // document.querySelector('body'). 
+  }else{
+    theme.style.left = '-12%';
+
+    setTimeout( ()=>{
+      theme.innerText = 'Dark';
+      theme.classList.remove('light');
+      theme.style.left = '-4%';
+      document.querySelector('body').classList.remove('darkbody');
+      quiz_box.style.background = 'white';
+      quiz_box.style.color = 'black';
+      res_box.style.background = 'white';
+      resBtn.style.background = 'brown';
+    },1000);
+  }
+});
+//pop4
