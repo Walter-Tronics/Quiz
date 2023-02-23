@@ -27,6 +27,11 @@ body {
   transition: 1s;
   cursor: pointer;
 }
+@media (max-width: 700px) {
+  .theme{
+    font-family: 'Roboto', sans-serif;
+  }
+}
 .darkbody{
   background: #282c34;
 }
