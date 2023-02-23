@@ -23,7 +23,7 @@ body {
   background: #282c34;
   padding: .2em .2em .2em 3em;
   border-radius: 5px;
-  font-family: cursive, 'sans-serif';
+  font-family: cursive, sans-serif;
   transition: 1s;
   cursor: pointer;
 }
