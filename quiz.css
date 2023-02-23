@@ -11,9 +11,27 @@
   box-sizing: border-box;
 }
 body {
-  background: #282c34;
+  background: brown;
   color: white;
   font-family: sans-serif;
+}
+.theme{
+  position: absolute;
+  top: 1%;
+  left: -4%;
+  font-size: 1.2rem;
+  background: #282c34;
+  padding: .2em .2em .2em 3em;
+  border-radius: 5px;
+  font-family: cursive;
+  transition: 1s;
+  cursor: pointer;
+}
+.darkbody{
+  background: #282c34;
+}
+.light {
+  background: brown;
 }
 #quiz-box {
   width: min(95%, 400px);
@@ -22,8 +40,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.281);
-  color: white;
+  background: white;
+  color: black;
   border-radius: 10px;
 }
 #timer {
@@ -68,12 +86,12 @@ b {
   width: 100%;
   height: 100%;
   display: none;
-  background: white;
+  background: #282c34;
   border-radius: 10px;
 }
 .subpop4 {
   position: relative;
-  padding: 2em;
+  padding: 1.06em;
   background: white;
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -104,10 +122,10 @@ b {
   font-family: Sofia;
 }
 .restart{
-  background: brown!important;
+  background: brown;
+  padding: .1em .3em;
   cursor: pointer;
   position: absolute;
-  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   height: 30px;
