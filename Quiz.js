@@ -1,10 +1,10 @@
 /* Quiz scripting starts*/
 
 //Getting the answers of the questions
-var answer1 = document.getElementById("option2");
-var answer2 = document.getElementById("option(2)4");
-var answer3 = document.getElementById("option(3)1");
-var answer4 = document.getElementById("option(4)3");
+const answer1 = document.getElementById("option2"),
+ answer2 = document.getElementById("option(2)4"),
+ answer3 = document.getElementById("option(3)1"),
+ answer4 = document.getElementById("option(4)3");
 
 //The try again funtion
 function retry() {
