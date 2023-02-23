@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 body {
-  background: brown;
+  background: #282c34;
   color: white;
   font-family: sans-serif;
 }
@@ -22,8 +22,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: white;
-  color: black;
+  background: rgba(0, 0, 0, 0.281);
+  color: white;
   border-radius: 10px;
 }
 #timer {
