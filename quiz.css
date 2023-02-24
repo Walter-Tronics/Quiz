@@ -4,6 +4,10 @@
   font-family: Sofia;
   src: url("/Sofia.ttf");
 }
+@font-face {
+  font-family: NeonTech;
+  src: url("/NeonTech.ttf");
+}
 
 *,
 *::before,
@@ -18,10 +22,11 @@ body {
 .theme{
   position: absolute;
   top: 1%;
-  left: -4%;
+  left: 0%;
+  transform: translateX(-40%);
   font-size: 1.2rem;
   background: #282c34;
-  padding: .2em .2em .2em 3em;
+  padding: .2rem .2rem .2rem 3rem;
   border-radius: 5px;
   font-family: cursive, sans-serif;
   transition: 1s;
@@ -29,7 +34,7 @@ body {
 }
 @media (max-width: 700px) {
   .theme{
-    font-family: 'Roboto', sans-serif;
+    font-family: NeonTech;
   }
 }
 .darkbody{
