@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: Sofia;
-  src: url("/Sofia.ttf");
+  src: url("https://walter-tronics.github.io/media/fonts/Sofia.ttf");
 }
 @font-face {
   font-family: NeonTech;
-  src: url("/NeonTech.ttf");
+  src: url("https://walter-tronics.github.io/media/fonts/NeonTech.ttf");
 }
 
 *,
