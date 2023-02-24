@@ -240,12 +240,12 @@ res_box = document.querySelector('.subpop4');
 
 theme.addEventListener('click', ()=>{
   if (theme.innerText == 'Dark') {
-    theme.style.left = '-12%';
+    theme.style.transform = "translateX(-100%)";
 
     setTimeout( ()=>{
       theme.innerText = 'Light';
       theme.classList.add('light');
-      theme.style.left = '-4%';
+      theme.style.transform = "translateX(-40%)";
       document.querySelector('body').classList.add('darkbody');
       quiz_box.style.background = 'rgba(0, 0, 0, 0.281)';
       quiz_box.style.color = 'white';
@@ -254,12 +254,12 @@ theme.addEventListener('click', ()=>{
     },1000);
     // document.querySelector('body'). 
   }else{
-    theme.style.left = '-12%';
+    theme.style.transform = "translateX(-100%)";
 
     setTimeout( ()=>{
       theme.innerText = 'Dark';
       theme.classList.remove('light');
-      theme.style.left = '-4%';
+      theme.style.transform = "translateX(-40%)";
       document.querySelector('body').classList.remove('darkbody');
       quiz_box.style.background = 'white';
       quiz_box.style.color = 'black';
