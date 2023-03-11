@@ -233,6 +233,28 @@ restart.addEventListener('click', ()=>{
 });
 
 //Theming
+
+//Defining the theme object
+const themes = {
+  Dark: {
+    text: 'Light',
+    bg: 'rgba(0, 0, 0, .281)',
+    color: 'white',
+    resBg: '#282c34',
+    resColor: 'white'
+  },
+  Light: {
+    text: 'Dark',
+    bg: 'white',
+    color: 'black',
+    resBg: '#aec4b8',
+    resColor: '#282c34'
+  },
+  initStyle: 'translateX(-100%)',
+  style: 'translateX(-40%)'
+}
+
+//Getting the HTML element for tweaking
 const theme = document.querySelector('.theme'),
 quiz_box = document.querySelector('#quiz-box'),
 resBtn = document.querySelector('.restart'),
@@ -240,31 +262,33 @@ res_box = document.querySelector('.subpop4');
 
 theme.addEventListener('click', ()=>{
   if (theme.innerText == 'Dark') {
-    theme.style.transform = "translateX(-100%)";
+    theme.style.transform = themes.initStyle;
 
     setTimeout( ()=>{
-      theme.innerText = 'Light';
+      theme.innerText = themes.Dark.text;
       theme.classList.add('light');
-      theme.style.transform = "translateX(-40%)";
+      theme.style.transform = themes.style;
       document.querySelector('body').classList.add('darkbody');
-      quiz_box.style.background = 'rgba(0, 0, 0, 0.281)';
-      quiz_box.style.color = 'white';
-      res_box.style.background = 'rgba(0, 0, 0, 0.281)';
-      resBtn.style.background = '#282c34';
+      quiz_box.style.background = themes.Dark.bg;
+      quiz_box.style.color = themes.Dark.color;
+      res_box.style.background = themes.Dark.bg;
+      resBtn.style.background = themes.Dark.resBg;
+      resBtn.style.color = themes.Dark.resColor;
     },1000);
     // document.querySelector('body'). 
   }else{
-    theme.style.transform = "translateX(-100%)";
+    theme.style.transform = themes.initStyle;
 
     setTimeout( ()=>{
-      theme.innerText = 'Dark';
+      theme.innerText = themes.Light.text;
       theme.classList.remove('light');
-      theme.style.transform = "translateX(-40%)";
+      theme.style.transform = themes.style;
       document.querySelector('body').classList.remove('darkbody');
-      quiz_box.style.background = 'white';
-      quiz_box.style.color = 'black';
-      res_box.style.background = 'white';
-      resBtn.style.background = 'brown';
+      quiz_box.style.background = themes.Light.bg;
+      quiz_box.style.color = themes.Light.color;
+      res_box.style.background = themes.Light.bg;
+      resBtn.style.background = themes.Light.resBg;
+      resBtn.style.color = themes.Light.resColor
     },1000);
   }
 });
