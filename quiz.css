@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 body {
-  background: brown;
+  background: #aec4b8;
   color: white;
   font-family: sans-serif;
 }
@@ -41,7 +41,8 @@ body {
   background: #282c34;
 }
 .light {
-  background: brown;
+  background: #aec4b8;
+  color: black;
 }
 #quiz-box {
   width: min(95%, 400px);
@@ -132,7 +133,7 @@ b {
   font-family: Sofia;
 }
 .restart{
-  background: brown;
+  background: #aec4b8;
   padding: .1em .3em;
   cursor: pointer;
   position: absolute;
@@ -141,5 +142,5 @@ b {
   height: 30px;
   border-radius: 5px 5px 0 0;
   bottom: -8px;
-  color: white;
+  color: #382c34;
 }
