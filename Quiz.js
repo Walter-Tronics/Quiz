@@ -121,8 +121,8 @@ function countdown() {
 
 //Creating variables for the audio files and popups
 var correct = new Audio('/correct.wav');
-var wrong = document.querySelector("#wrong");
-var done = document.querySelector("#done");
+var wrong = new Audio('/wrong.wav');
+var done = new Audio('/done');
 var pop = document.getElementById("pop");
 var pop2 = document.getElementById("pop2");
 var pop3 = document.getElementById("pop3");
