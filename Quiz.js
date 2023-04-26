@@ -120,7 +120,7 @@ function countdown() {
 }
 
 //Creating variables for the audio files and popups
-var correct = document.querySelector("#correct");
+var correct = new Audio('/correct.wav');
 var wrong = document.querySelector("#wrong");
 var done = document.querySelector("#done");
 var pop = document.getElementById("pop");
