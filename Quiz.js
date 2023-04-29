@@ -6,6 +6,14 @@ const answer1 = document.getElementById("option2"),
  answer3 = document.getElementById("option(3)1"),
  answer4 = document.getElementById("option(4)3");
 
+ //Getting the popups buttons
+ //next btn select
+ document.querySelector('#next_btn').addEventListener('click', ()=> next());
+//retry btn select
+document.querySelector('#retry_btn').addEventListener('click', ()=> retry());
+//retry continue select
+document.querySelector('#retry_btn2').addEventListener('click', ()=> retry());
+
 //The try again funtion
 function retry() {
   document.getElementById("pop2").style.display = "none";
