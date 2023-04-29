@@ -8,11 +8,11 @@ const answer1 = document.getElementById("option2"),
 
  //Getting the popups buttons
  //next btn select
- document.querySelector('#next_btn').addEventListener('click', ()=> next());
+ document.querySelector('#next_btn').addEventListener('click', next);
 //retry btn select
-document.querySelector('#retry_btn').addEventListener('click', ()=> retry());
+document.querySelector('#retry_btn').addEventListener('click', retry);
 //retry continue select
-document.querySelector('#retry_btn2').addEventListener('click', ()=> retry());
+document.querySelector('#retry_btn2').addEventListener('click', retry);
 
 //The try again funtion
 function retry() {
