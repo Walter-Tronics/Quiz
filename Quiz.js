@@ -11,8 +11,8 @@ const answer1 = document.getElementById("option2"),
  document.querySelector('#next_btn').addEventListener('click', next);
 //retry btn select
 document.querySelector('#retry_btn').addEventListener('click', retry);
-//retry continue select
-document.querySelector('#retry_btn2').addEventListener('click', retry);
+//continue btn select
+document.querySelector('#cont_btn').addEventListener('click', next);
 
 //The try again funtion
 function retry() {
