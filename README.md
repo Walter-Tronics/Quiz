@@ -1,7 +1,7 @@
 # Quiz
 
 ### Simple Quiz web app made with JavaScript coupled with light and dark theme
-### Languages:
+### Technologies:
 * HTML
 * CSS
 * JavaScript
